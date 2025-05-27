@@ -51,4 +51,10 @@ body {
   border-radius: 12px;
   color: #d3dfff;
 }
+h1{
+    color: rgb(255, 255, 255);
+   font-family: Arial, sans-serif;
+   justify-content: center;
+   align-items: center;
+}
 
