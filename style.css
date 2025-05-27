@@ -1,10 +1,7 @@
 body {
   margin: 0;
   font-family: Arial, sans-serif;
-  background-image: url(INFOCHPDPICT000041975439.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
+  background-color: #000c27;
 }
 
 .navbar {
