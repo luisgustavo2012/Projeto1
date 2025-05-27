@@ -52,10 +52,17 @@ body {
   color: #d3dfff;
 }
 h1{
-    color: rgb(255, 255, 255);
-   font-family: Arial, sans-serif;
-   justify-content: center;
-   align-items: center;
-   text-align: justify;
+     margin: 0;
+  height: 100vh; /* Altura total da tela */
+  display: flex;
+  justify-content: center; /* Centraliza horizontalmente */
+  align-items: center;     /* Centraliza verticalmente */
+  background-color: #000c27;
+  color: white;
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+.centro {
+  max-width: 600px;
 }
 
