@@ -52,7 +52,7 @@ body {
   color: #d3dfff;
 }
 h1{
-     margin: 0;
+     border: 0;
   height: 100vh; /* Altura total da tela */
   display: flex;
   justify-content: center; /* Centraliza horizontalmente */
