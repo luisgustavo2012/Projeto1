@@ -61,6 +61,7 @@ h1{
   color: white;
   font-family: Arial, sans-serif;
   text-align: center;
+  flex: content;
 }
 .centro {
   max-width: 600px;
