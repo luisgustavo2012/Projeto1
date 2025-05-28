@@ -51,7 +51,7 @@ body {
   border-radius: 12px;
   color: #d3dfff;
 }
-h1{
+.me{
      margin: 0;
   height: 100vh; /* Altura total da tela */
   display: flex;
@@ -62,6 +62,7 @@ h1{
   font-family: Arial, sans-serif;
   text-align:center;
 }
+
 .centro {
   max-width: 700px;
   padding-left: 24px;
