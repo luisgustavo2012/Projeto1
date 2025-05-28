@@ -70,7 +70,9 @@ body {
 }
 .meio{
   align-items: center;
-  inline-size: 30px;
+  width: 30px;
+  height: 20px;
+  image-resolution: 25px;
   
 }
 
