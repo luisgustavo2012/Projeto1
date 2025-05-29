@@ -91,7 +91,7 @@ table {
     }
 
     .imagem {
-      width: 150px;
+      width: auto;
       height: 160px;
       border-radius: 10px;
     }
