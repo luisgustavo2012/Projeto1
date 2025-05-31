@@ -130,57 +130,47 @@ main.tabela-jogos {
   padding: 120px 40px 40px;
   display: flex;
   flex-direction: column;
-  align-items: center;
-}
-
-/* Estilo da tabela */
-table {
-  width: 90%;
-  max-width: 1200px;
-  border-collapse: separate;
-  border-spacing: 0 30px;
-}
-
-/* Estilo das células */
-td {
-  width: 50%;
-  padding: 20px;
-  vertical-align: middle;
-  background-color: white;
-  border-radius: 12px;
-  box-shadow: 0 0 12px rgba(0, 0, 0, 0.08);
-  font-size: 18px;
-  line-height: 1.6;
-}
-
-/* Imagem maior e centralizada */
-td img {
-  width: 100%;
-  max-width: 500px;
-  height: auto;
-  border-radius: 15px;
-  display: block;
-  margin: 0 auto;
-}
-
-/* Linha em layout flexível */
-tr {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   gap: 40px;
+}
+
+.jogo {
+  display: flex;
+  align-items: center;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.08);
+  padding: 20px;
+  gap: 30px;
   flex-wrap: wrap;
 }
 
-/* Estilo para telas menores */
+.jogo img {
+  width: 100%;
+  max-width: 300px;
+  border-radius: 10px;
+}
+
+.jogo p {
+  flex: 1;
+  margin: 0;
+  font-size: 1rem;
+}
+
+.jogo.direita {
+  flex-direction: row-reverse;
+}
+
+/* Responsividade */
 @media (max-width: 768px) {
-  tr {
+  .jogo,
+  .jogo.direita,
+  .jogo.esquerda {
     flex-direction: column;
+    text-align: center;
   }
 
-  td {
-    width: 90%;
-    text-align: center;
+  .jogo img {
+    max-width: 100%;
   }
 }
 
