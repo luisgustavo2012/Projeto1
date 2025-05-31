@@ -274,3 +274,37 @@ footer {
 .top-btn:hover {
   background: #2563eb;
 }
+.vagas {
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 20px;
+}
+
+.vagas li {
+  background: #f0f4f8;
+  margin-bottom: 10px;
+  padding: 12px 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+  transition: background 0.3s ease;
+}
+
+.vagas li:hover {
+  background: #e2e8f0;
+}
+
+.btn {
+  display: inline-block;
+  background: #3b82f6;
+  color: #fff;
+  padding: 12px 24px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.btn:hover {
+  background: #2563eb;
+  transform: translateY(-2px);
+}
