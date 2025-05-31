@@ -69,10 +69,11 @@ body {
 
 }
 .meio{
-  align-items: center;
-  width: 30px;
-  height: 20px;
-  image-resolution: 25px;
+    position: absolute;
+    top: 50px;
+    left: 100px;
+    width: 200px;
+  
   
 }
 table {
