@@ -110,8 +110,9 @@ table {
 }
 
 .apresentacao {
-  padding: 40px;
+  padding: 150px;
   text-align: center;
+  margin-bottom: 20px;
 }
 
 .apresentacao p {
