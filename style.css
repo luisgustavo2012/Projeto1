@@ -173,5 +173,19 @@ main.tabela-jogos {
     max-width: 100%;
   }
 }
+.botao {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #007bff; /* azul */
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.botao:hover {
+  background-color: #0056b3;
+}
 
 
