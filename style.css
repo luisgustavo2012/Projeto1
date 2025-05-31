@@ -78,27 +78,6 @@ body {
   
   
 }
-table {
-      width: 80%;
-      margin: 50px auto;
-      border-collapse: collapse;
-      font-family: Arial, sans-serif;
-    }
-
-    td {
-      padding: 20px;
-      vertical-align: middle;
-      text-align: center;
-      border: none;
-      color: white;
-    }
-
-    .imagem img {
-      width: 150px;
-      height: 160px;
-      border-radius: 10px;
-    }
-  
     .banner {
   background-image: url();
   background-size: cover;
@@ -146,6 +125,47 @@ footer {
   text-align: center;
   padding: 15px;
   margin-top: 40px;
+}
+main.tabela-jogos {
+  padding: 120px 40px 40px; /* espaçamento com a navbar fixa */
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+td {
+  padding: 20px;
+  vertical-align: middle;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.08);
+  margin: 10px;
+}
+
+td img {
+  width: 100%;
+  max-width: 300px;
+  border-radius: 10px;
+  display: block;
+  margin: auto;
+}
+
+tr {
+  margin-bottom: 20px;
+  display: flex;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 768px) {
+  tr {
+    flex-direction: column;
+  }
+  td {
+    width: 100%;
+  }
 }
 
 
