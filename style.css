@@ -98,13 +98,7 @@ table {
       height: 160px;
       border-radius: 10px;
     }
-    .imagem-banner {
-  max-width: 150px;
-  margin-bottom: 20px;
-  position: relative;
-  height: 300px;
-  overflow: hidden;
-}
+  
     .banner {
   background-image: url();
   background-size: cover;
