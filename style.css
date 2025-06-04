@@ -14,7 +14,7 @@ body {
   padding: 10px 20px;                 /*  Espaçamento interno */
   background-color: #141925;          /*  Fundo escuro da navbar */
   color: white;                       /*  Repetido em vários elementos: cor branca padrão */
-
+}
 .logo img {
   height: 40px;                        /*  Define tamanho do logo */
   width: 40px;                         /*  Mantém proporcionalidade quadrada */
