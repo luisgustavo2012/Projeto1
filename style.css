@@ -1,102 +1,82 @@
-.container {
-  max-width: 1200px;   /* largura máxima do conteúdo */
-  margin: 0 auto;       /* centraliza horizontalmente */
-  padding: 20px;        /* espaço interno */
-  box-sizing: border-box; /* inclui padding dentro da largura */
+/* ---------- Estilização Geral ---------- */
+body {
+  margin: 0;                             /* Remove margens padrão */
+  font-family: Arial, sans-serif;        /* Fonte padrão da página */
+  background-color: #000c27;             /* Cor de fundo escura */
 }
 
-body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-  background-color: #000c27;
-  
-}
+/* ---------- Navbar / Cabeçalho ---------- */
 
 .navbar {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+  display: flex;                       /* Layout flexível horizontal */
+  align-items: center;                /* Alinha itens verticalmente */
+  justify-content: space-between;     /* Espaço entre logo e menus */
   padding: 10px 20px;
-  background-color: #141925;
+  background-color: #141925;          /* Fundo escuro da barra */
   color: white;
-  z-index: 1000;
+  z-index: 1000;                      /* Mantém a barra sobreposta */
 }
 
 .logo img {
-  height: 40px;
+  height: 40px;                        /* Tamanho do logo */
   width: 40px;
 }
 
 .nav-links {
-  list-style: none;
-  display: flex;
-  gap: 20px;
+  list-style: none;                   /* Remove marcadores da lista */
+  display: flex;                      /* Itens lado a lado */
+  gap: 20px;                          /* Espaço entre os links */
   margin: 0;
   padding: 0;
 }
 
 .nav-links li a {
-  text-decoration: none;
-  color: white;
+  text-decoration: none;             /* Remove sublinhado */
+  color: white;                      /* Cor dos links */
   font-weight: bold;
 }
 
-.search-cart {
-  display: flex;
-  align-items: center;
-  gap: 15px;
-}
+/* ---------- Estilização de Cabeçalhos Centrais ---------- */
 
-.search-input {
-  padding: 8px 12px;
-  border-radius: 20px;
-  border: none;
-  outline: none;
-  width: 150px;
-}
-
-.cart {
-  background-color: #0a2a65;
-  padding: 6px 12px;
-  border-radius: 12px;
-  color: #d3dfff;
-}
-.he{
-     margin: 0;
-  height: 100vh; /* Altura total da tela */
+.he {
+  margin: 0;
+  height: 100vh;                      /* Altura da tela inteira */
   display: flex;
-  justify-content: center; /* Centraliza horizontalmente */
-  align-items: center;     /* Centraliza verticalmente */
+  justify-content: center;           /* Centraliza horizontalmente */
+  align-items: center;               /* Centraliza verticalmente */
   color: white;
   font-family: Arial, sans-serif;
-  text-align:center;
+  text-align: center;
 }
 
 .centro {
   max-width: 700px;
   padding-left: 24px;
+}
 
+.meio {
+  position: absolute;
+  top: 50px;
+  left: 200px;
+  width: 200px;
 }
-.meio{
-    position: absolute;
-    top: 50px;
-    left: 200px;
-    width: 200px;
-  
-  
-}
-    .banner {
-  background-image: url();
-  background-size: cover;
+
+/* ---------- Banner Principal ---------- */
+
+.banner {
+  background-image: url();            /* Aqui vai a imagem de fundo */
+  background-size: cover;             /* Cobre todo o container */
   background-position: center;
   height: 300px;
   display: flex;
   align-items: center;
   justify-content: center;
-  color: rgb(255, 255, 255);
+  color: white;
   font-size: 32px;
   font-weight: bold;
 }
+
+/* ---------- Apresentação / Descrição ---------- */
 
 .apresentacao {
   padding: 50px;
@@ -114,17 +94,21 @@ body {
   color: white;
 }
 
+/* ---------- Botão padrão ---------- */
+
 .btn-produtos {
   margin-top: 30px;
   padding: 12px 25px;
   background-color: #2980b9;
-  color: rgb(34, 33, 33);
+  color: #222121;
   border: none;
   border-radius: 5px;
   font-size: 16px;
   cursor: pointer;
   text-decoration: none;
 }
+
+/* ---------- Rodapé ---------- */
 
 footer {
   background-color: #2c3e50;
@@ -133,6 +117,9 @@ footer {
   padding: 15px;
   margin-top: 40px;
 }
+
+/* ---------- Lista de Jogos ---------- */
+
 main.tabela-jogos {
   padding: 120px 40px 40px;
   display: flex;
@@ -143,7 +130,7 @@ main.tabela-jogos {
 .jogo {
   display: flex;
   align-items: center;
-  background-color: rgb(255, 255, 255);
+  background-color: white;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.08);
   padding: 20px;
@@ -164,15 +151,16 @@ main.tabela-jogos {
 }
 
 .jogo.direita {
-  flex-direction: row-reverse;
+  flex-direction: row-reverse;       /* Inverte o lado da imagem */
 }
 
-/* Responsividade */
+/* ---------- Responsividade (Mobile) ---------- */
+
 @media (max-width: 768px) {
   .jogo,
   .jogo.direita,
   .jogo.esquerda {
-    flex-direction: column;
+    flex-direction: column;          /* Muda para coluna no mobile */
     text-align: center;
   }
 
@@ -180,10 +168,13 @@ main.tabela-jogos {
     max-width: 100%;
   }
 }
+
+/* ---------- Botão genérico ---------- */
+
 .botao {
   display: inline-block;
   padding: 10px 20px;
-  background-color: #007bff; /* azul */
+  background-color: #007bff;
   color: white;
   text-decoration: none;
   border-radius: 5px;
@@ -194,6 +185,9 @@ main.tabela-jogos {
 .botao:hover {
   background-color: #0056b3;
 }
+
+/* ---------- Container com sombra/flutuante ---------- */
+
 .container {
   max-width: 800px;
   margin: 60px auto;
@@ -205,8 +199,10 @@ main.tabela-jogos {
 }
 
 .container:hover {
-  transform: translateY(-5px);
+  transform: translateY(-5px);       /* Efeito flutuar */
 }
+
+/* ---------- Tipografia ---------- */
 
 h1 {
   font-size: 2.5em;
@@ -227,6 +223,8 @@ p {
   color: #555;
 }
 
+/* ---------- Informações Extras ---------- */
+
 .info {
   margin-top: 20px;
 }
@@ -242,6 +240,8 @@ p {
   color: #374151;
 }
 
+/* ---------- Links ---------- */
+
 a {
   color: #3b82f6;
   text-decoration: none;
@@ -254,14 +254,8 @@ a:hover {
   text-decoration: underline;
 }
 
-footer {
-  text-align: center;
-  padding: 20px 0;
-  font-size: 0.9em;
-  color: #6b7280;
-}
+/* ---------- Botão flutuante (voltar ao topo) ---------- */
 
-/* Botão voltar ao topo */
 .top-btn {
   position: fixed;
   bottom: 30px;
@@ -281,6 +275,9 @@ footer {
 .top-btn:hover {
   background: #2563eb;
 }
+
+/* ---------- Hero Section ---------- */
+
 .hero {
   background: linear-gradient(135deg, #3b82f6, #60a5fa);
   color: white;
@@ -303,14 +300,8 @@ footer {
   color: white;
 }
 
-/* Container principal */
-.container {
-  max-width: 1000px;
-  margin: 40px auto;
-  padding: 0 20px;
-}
+/* ---------- Grid de Vagas ---------- */
 
-/* Grid de vagas */
 .vagas-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -341,7 +332,8 @@ footer {
   margin-bottom: 8px;
 }
 
-/* Botão fixo */
+/* ---------- Botão fixo de ação ---------- */
+
 .fixed-btn {
   position: fixed;
   bottom: 30px;
