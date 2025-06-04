@@ -1,362 +1,354 @@
-/* ---------- Estilização Geral ---------- */
+
 body {
-  margin: 0;                             /* Remove margens padrão */
-  font-family: Arial, sans-serif;        /* Fonte padrão da página */
-  background-color: #000c27;             /* Cor de fundo escura */
+  margin: 0;                             /*  Remove margens padrão */
+  font-family: Arial, sans-serif;        /*  Define fonte genérica */
+  background-color: #000c27;             /*  Cor de fundo escura */
 }
 
-/* ---------- Navbar / Cabeçalho ---------- */
+
 
 .navbar {
-  display: flex;                       /* Layout flexível horizontal */
-  align-items: center;                /* Alinha itens verticalmente */
-  justify-content: space-between;     /* Espaço entre logo e menus */
-  padding: 10px 20px;
-  background-color: #141925;          /* Fundo escuro da barra */
-  color: white;
-  z-index: 1000;                      /* Mantém a barra sobreposta */
-}
+  display: flex;                       /*  Layout horizontal flexível */
+  align-items: center;                /*  Alinha itens verticalmente */
+  justify-content: space-between;     /*  Espaço entre logo e menus */
+  padding: 10px 20px;                 /*  Espaçamento interno */
+  background-color: #141925;          /*  Fundo escuro da navbar */
+  color: white;                       /*  Repetido em vários elementos: cor branca padrão */
 
 .logo img {
-  height: 40px;                        /* Tamanho do logo */
-  width: 40px;
+  height: 40px;                        /*  Define tamanho do logo */
+  width: 40px;                         /*  Mantém proporcionalidade quadrada */
 }
 
 .nav-links {
-  list-style: none;                   /* Remove marcadores da lista */
-  display: flex;                      /* Itens lado a lado */
-  gap: 20px;                          /* Espaço entre os links */
-  margin: 0;
-  padding: 0;
+  list-style: none;                   /*  Remove marcadores padrão */
+  display: flex;                      /*  Itens lado a lado */
+  gap: 20px;                          /*  Espaço entre links */
+  margin: 0;                          /*  Remove margens padrão */
+  padding: 0;                         /*  Remove espaçamento padrão */
 }
 
 .nav-links li a {
-  text-decoration: none;             /* Remove sublinhado */
-  color: white;                      /* Cor dos links */
-  font-weight: bold;
+  text-decoration: none;             /*  Remove sublinhado padrão */
+  color: white;                      /*  Repetido: cor branca */
+  font-weight: bold;                 /*  Destaca o link */
 }
 
-/* ---------- Estilização de Cabeçalhos Centrais ---------- */
+
 
 .he {
-  margin: 0;
-  height: 100vh;                      /* Altura da tela inteira */
-  display: flex;
-  justify-content: center;           /* Centraliza horizontalmente */
-  align-items: center;               /* Centraliza verticalmente */
-  color: white;
-  font-family: Arial, sans-serif;
-  text-align: center;
+  margin: 0;                          /*  Remove margens */
+  height: 100vh;                      /*  Ocupa altura total da viewport */
+  display: flex;                      /*  Layout flexível */
+  justify-content: center;           /*  Centraliza horizontalmente */
+  align-items: center;               /*  Centraliza verticalmente */
+  color: white;                      /*  Repetido: cor branca */
+  font-family: Arial, sans-serif;     /*  Repetido: fonte já definida no body */
+  text-align: center;                /*  Centraliza texto */
 }
 
 .centro {
-  max-width: 700px;
-  padding-left: 24px;
+  max-width: 700px;                  /*  Limita largura */
+  padding-left: 24px;                /*  Adiciona espaçamento à esquerda */
 }
 
 .meio {
-  position: absolute;
-  top: 50px;
-  left: 200px;
-  width: 200px;
+  position: absolute;                /*  Posicionamento fora do fluxo normal */
+  top: 50px;                         /*  Ajuste vertical */
+  left: 200px;                       /*  Ajuste horizontal */
+  width: 200px;                      /*  Define largura */
 }
 
-/* ---------- Banner Principal ---------- */
+
 
 .banner {
-  background-image: url();            /* Aqui vai a imagem de fundo */
-  background-size: cover;             /* Cobre todo o container */
-  background-position: center;
-  height: 300px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: white;
-  font-size: 32px;
-  font-weight: bold;
+  background-image: url();            /*  Local reservado para imagem */
+  background-size: cover;             /*  Preenche container */
+  background-position: center;        /*  Centraliza imagem */
+  height: 300px;                      /*  Define altura */
+  display: flex;                      /*  Layout flexível */
+  align-items: center;                /*  Centraliza verticalmente */
+  justify-content: center;            /*  Centraliza horizontalmente */
+  color: white;                       /*  Repetido: cor branca */
+  font-size: 32px;                    /*  Tamanho grande para destaque */
+  font-weight: bold;                  /*  Negrito */
 }
 
-/* ---------- Apresentação / Descrição ---------- */
+
 
 .apresentacao {
-  padding: 50px;
-  text-align: center;
-  margin-bottom: 20px;
-  color: white;
+  padding: 50px;                     /*  Espaçamento interno */
+  text-align: center;                /*  Centraliza texto */
+  margin-bottom: 20px;               /*  Espaço inferior */
+  color: white;                      /*  Repetido: cor branca */
 }
 
 .apresentacao p {
-  max-width: 600px;
-  margin: auto;
-  font-size: 18px;
-  line-height: 1.6;
-  margin-bottom: 20px;
-  color: white;
+  max-width: 600px;                  /*  Limita largura para leitura confortável */
+  margin: auto;                      /*  Centraliza */
+  font-size: 18px;                   /*  Tamanho de texto adequado */
+  line-height: 1.6;                  /*  Melhora legibilidade */
+  margin-bottom: 20px;               /*  Espaço inferior */
+  color: white;                      /*  Repetido: cor branca */
 }
 
-/* ---------- Botão padrão ---------- */
+
 
 .btn-produtos {
-  margin-top: 30px;
-  padding: 12px 25px;
-  background-color: #2980b9;
-  color: #222121;
-  border: none;
-  border-radius: 5px;
-  font-size: 16px;
-  cursor: pointer;
-  text-decoration: none;
+  margin-top: 30px;                  /*  Espaço acima */
+  padding: 12px 25px;                /*  Espaçamento interno */
+  background-color: #2980b9;         /*  Cor azul vibrante */
+  color: #222121;                    /*  Cor do texto contrastante */
+  border: none;                      /*  Remove borda padrão */
+  border-radius: 5px;                /*  Cantos arredondados */
+  font-size: 16px;                   /*  Tamanho do texto */
+  cursor: pointer;                   /*  Cursor tipo mãozinha */
+  text-decoration: none;             /*  Remove sublinhado */
 }
 
-/* ---------- Rodapé ---------- */
+
 
 footer {
-  background-color: #2c3e50;
-  color: white;
-  text-align: center;
-  padding: 15px;
-  margin-top: 40px;
+  background-color: #2c3e50;         /*  Fundo escuro */
+  color: white;                      /*  Repetido: cor branca */
+  text-align: center;                /*  Centraliza conteúdo */
+  padding: 15px;                     /*  Espaçamento interno */
+  margin-top: 40px;                  /*  Espaço acima */
 }
 
-/* ---------- Lista de Jogos ---------- */
+
 
 main.tabela-jogos {
-  padding: 120px 40px 40px;
-  display: flex;
-  flex-direction: column;
-  gap: 40px;
+  padding: 120px 40px 40px;          /*  Espaçamento superior maior */
+  display: flex;                     /*  Layout flexível */
+  flex-direction: column;            /*  Itens empilhados */
+  gap: 40px;                         /*  Espaço entre itens */
 }
 
 .jogo {
-  display: flex;
-  align-items: center;
-  background-color: white;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.08);
-  padding: 20px;
-  gap: 30px;
-  flex-wrap: wrap;
+  display: flex;                     /*  Layout flexível */
+  align-items: center;               /*  Alinha verticalmente */
+  background-color: white;           /*  Fundo branco */
+  border-radius: 10px;               /*  Cantos arredondados */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.08); /*  Sombra leve */
+  padding: 20px;                     /*  Espaçamento interno */
+  gap: 30px;                         /*  Espaço entre imagem e texto */
+  flex-wrap: wrap;                   /*  Permite quebra de linha */
 }
 
 .jogo img {
-  width: 100%;
-  max-width: 300px;
-  border-radius: 10px;
+  width: 100%;                       /*  Ocupa largura total do container */
+  max-width: 300px;                  /*  Limita largura máxima */
+  border-radius: 10px;               /*  Arredonda imagem */
 }
 
 .jogo p {
-  flex: 1;
-  margin: 0;
-  font-size: 20px;
+  flex: 1;                           /*  Ocupa espaço restante */
+  margin: 0;                         /*  Remove margens padrão */
+  font-size: 20px;                   /*  Texto maior */
 }
 
 .jogo.direita {
-  flex-direction: row-reverse;       /* Inverte o lado da imagem */
+  flex-direction: row-reverse;       /*  Inverte ordem dos itens */
 }
 
-/* ---------- Responsividade (Mobile) ---------- */
+
 
 @media (max-width: 768px) {
   .jogo,
   .jogo.direita,
-  .jogo.esquerda {
-    flex-direction: column;          /* Muda para coluna no mobile */
-    text-align: center;
+  .jogo.esquerda {                   /*  Repetição: mesmo comportamento para várias classes */
+    flex-direction: column;          /*  Empilha elementos verticalmente */
+    text-align: center;              /*  Centraliza texto */
   }
 
   .jogo img {
-    max-width: 100%;
+    max-width: 100%;                 /*  Garante que imagem não ultrapasse container */
   }
 }
 
-/* ---------- Botão genérico ---------- */
-
 .botao {
-  display: inline-block;
-  padding: 10px 20px;
-  background-color: #007bff;
-  color: white;
-  text-decoration: none;
-  border-radius: 5px;
-  font-weight: bold;
-  transition: background-color 0.3s;
+  display: inline-block;             /*  Permite definir dimensões */
+  padding: 10px 20px;                /*  Espaçamento interno */
+  background-color: #007bff;         /*  Cor azul */
+  color: white;                      /*  Repetido: cor branca */
+  text-decoration: none;             /*  Remove sublinhado */
+  border-radius: 5px;                /*  Cantos arredondados */
+  font-weight: bold;                 /*  Texto destacado */
+  transition: background-color 0.3s; /*  Suaviza troca de cor */
 }
 
 .botao:hover {
-  background-color: #0056b3;
+  background-color: #0056b3;         /*  Cor mais escura ao passar mouse */
 }
 
-/* ---------- Container com sombra/flutuante ---------- */
+
 
 .container {
-  max-width: 800px;
-  margin: 60px auto;
-  background: #fff;
-  padding: 40px;
-  border-radius: 20px;
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease;
+  max-width: 800px;                  /*  Limita largura */
+  margin: 60px auto;                 /*  Centraliza e espaça */
+  background: #fff;                  /*  Fundo branco */
+  padding: 40px;                     /*  Espaçamento interno */
+  border-radius: 20px;               /*  Cantos arredondados maiores */
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1); /*  Sombra suave */
+  transition: transform 0.3s ease;   /*  Suaviza animação */
 }
 
 .container:hover {
-  transform: translateY(-5px);       /* Efeito flutuar */
+  transform: translateY(-5px);       /*  Efeito flutuante ao passar mouse */
 }
 
-/* ---------- Tipografia ---------- */
+
 
 h1 {
-  font-size: 2.5em;
-  margin-bottom: 20px;
-  color: #1f2937;
+  font-size: 2.5em;                  /*  Tamanho grande para destaque */
+  margin-bottom: 20px;               /*  Espaço inferior */
+  color: #1f2937;                    /*  Cor escura */
 }
 
 h2 {
-  font-size: 1.5em;
-  margin-top: 30px;
-  margin-bottom: 10px;
-  color: #3b82f6;
+  font-size: 1.5em;                  /*  Menor que h1 */
+  margin-top: 30px;                  /*  Espaço acima */
+  margin-bottom: 10px;               /*  Espaço abaixo */
+  color: #3b82f6;                    /*  Azul vibrante */
 }
 
 p {
-  margin-bottom: 15px;
-  line-height: 1.7;
-  color: #555;
+  margin-bottom: 15px;               /*  Espaço após parágrafos */
+  line-height: 1.7;                  /*  Melhora legibilidade */
+  color: #555;                       /*  Cor de texto padrão */
 }
 
-/* ---------- Informações Extras ---------- */
+
 
 .info {
-  margin-top: 20px;
+  margin-top: 20px;                  /*  Espaço acima */
 }
 
 .info p {
-  display: flex;
-  align-items: center;
+  display: flex;                     /*  Layout flexível */
+  align-items: center;               /*  Alinha verticalmente */
 }
 
 .info strong {
-  min-width: 120px;
-  font-weight: 600;
-  color: #374151;
+  min-width: 120px;                  /*  Mantém largura mínima */
+  font-weight: 600;                  /*  Texto mais forte */
+  color: #374151;                    /*  Tom de cinza */
 }
 
-/* ---------- Links ---------- */
+
 
 a {
-  color: #3b82f6;
-  text-decoration: none;
-  font-weight: 500;
-  transition: color 0.3s ease;
+  color: #3b82f6;                    /*  Azul vibrante */
+  text-decoration: none;             /*  Remove sublinhado */
+  font-weight: 500;                  /*  Peso intermediário */
+  transition: color 0.3s ease;       /*  Suaviza troca de cor */
 }
 
 a:hover {
-  color: #2563eb;
-  text-decoration: underline;
+  color: #2563eb;                    /*  Azul mais escuro no hover */
+  text-decoration: underline;        /* Sublinha no hover */
 }
 
-/* ---------- Botão flutuante (voltar ao topo) ---------- */
-
 .top-btn {
-  position: fixed;
-  bottom: 30px;
-  right: 30px;
-  background: #3b82f6;
-  color: #fff;
-  border: none;
-  border-radius: 50%;
-  width: 50px;
+  position: fixed;                   /*  Fixo na tela */
+  bottom: 30px;                      /*  Distância da base */
+  right: 30px;                       /*  Distância lateral */
+  background: #3b82f6;               /*  Azul vibrante */
+  color: #fff;                       /*  Repetido: cor branca */
+  border: none;                      /*  Remove borda */
+  border-radius: 50%;                /*  Formato redondo */
+  width: 50px;                       /*  Tamanho fixo */
   height: 50px;
-  font-size: 1.5em;
-  cursor: pointer;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
-  transition: background 0.3s ease;
+  font-size: 1.5em;                  /*  Ícone maior */
+  cursor: pointer;                   /*  Muda cursor */
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2); /*  Sombra suave */
+  transition: background 0.3s ease;  /*  Suaviza troca de cor */
 }
 
 .top-btn:hover {
-  background: #2563eb;
+  background: #2563eb;               /*  Azul mais escuro */
 }
 
-/* ---------- Hero Section ---------- */
+
 
 .hero {
-  background: linear-gradient(135deg, #3b82f6, #60a5fa);
-  color: white;
-  text-align: center;
-  padding: 60px 20px;
-  border-radius: 0 0 40px 40px;
+  background: linear-gradient(135deg, #3b82f6, #60a5fa); /*  Gradiente azul */
+  color: white;                      /*  Repetido: cor branca */
+  text-align: center;                /*  Centraliza texto */
+  padding: 60px 20px;                /*  Espaçamento interno */
+  border-radius: 0 0 40px 40px;      /*  Arredonda apenas parte inferior */
 }
 
 .hero h1 {
-  font-size: 2.8em;
-  margin-bottom: 15px;
-  color: white;
+  font-size: 2.8em;                  /*  Destaque grande */
+  margin-bottom: 15px;               /*  Espaço inferior */
+  color: white;                      /*  Repetido: cor branca */
 }
 
 .hero p {
-  font-size: 1.2em;
-  max-width: 600px;
-  margin: 0 auto;
-  line-height: 1.5;
-  color: white;
+  font-size: 1.2em;                  /*  Texto médio */
+  max-width: 600px;                  /*  Limita largura */
+  margin: 0 auto;                    /*  Centraliza */
+  line-height: 1.5;                  /*  Melhora legibilidade */
+  color: white;                      /*  Repetido: cor branca */
 }
 
-/* ---------- Grid de Vagas ---------- */
 
 .vagas-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 20px;
-  margin-top: 30px;
+  display: grid;                     /*  Layout em grade */
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /*  Colunas automáticas */
+  gap: 20px;                         /*  Espaço entre itens */
+  margin-top: 30px;                  /*  Espaço acima */
 }
 
 .vaga-card {
-  background: #fff;
-  border-radius: 15px;
-  padding: 20px;
-  box-shadow: 0 6px 16px rgba(0,0,0,0.1);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background: #fff;                  /*  Fundo branco */
+  border-radius: 15px;               /*  Cantos arredondados */
+  padding: 20px;                     /*  Espaçamento interno */
+  box-shadow: 0 6px 16px rgba(0,0,0,0.1); /*  Sombra leve */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /*  Animações suaves */
 }
 
 .vaga-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+  transform: translateY(-5px);       /*  Efeito de flutuar */
+  box-shadow: 0 10px 20px rgba(0,0,0,0.15); /*  Sombra mais intensa */
 }
 
 .vaga-card h3 {
-  margin-bottom: 10px;
-  color: #1f2937;
+  margin-bottom: 10px;               /*  Espaço inferior */
+  color: #1f2937;                    /*  Cor escura */
 }
 
 .vaga-card p {
-  color: #555;
-  margin-bottom: 8px;
+  color: #555;                       /*  Cor de texto padrão */
+  margin-bottom: 8px;                /*  Espaço inferior */
 }
 
-/* ---------- Botão fixo de ação ---------- */
 
 .fixed-btn {
-  position: fixed;
-  bottom: 30px;
+  position: fixed;                   /*  Fixo na tela */
+  bottom: 30px;                      /*  Distância da base */
   right: 30px;
-  background: #3b82f6;
-  color: #fff;
-  padding: 15px 25px;
-  border-radius: 30px;
-  text-decoration: none;
-  font-weight: bold;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
-  transition: background 0.3s ease, transform 0.2s ease;
+  background: #3b82f6;               /*  Azul vibrante */
+  color: #fff;                       /*  Repetido: cor branca */
+  padding: 15px 25px;                /*  Espaçamento interno */
+  border-radius: 30px;               /*  Formato pílula */
+  text-decoration: none;             /*  Remove sublinhado */
+  font-weight: bold;                 /*  Texto destacado */
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2); /*  Sombra */
+  transition: background 0.3s ease, transform 0.2s ease; /* Animações suaves */
 }
 
 .fixed-btn:hover {
-  background: #2563eb;
-  transform: translateY(-3px);
+  background: #2563eb;               /*  Azul mais escuro */
+  transform: translateY(-3px);       /*  Efeito flutuar */
 }
 
 footer {
-  text-align: center;
-  padding: 20px 0;
-  font-size: 0.9em;
-  color: #6b7280;
-  margin-top: 50px;
+  text-align: center;                /*  Centraliza conteúdo */
+  padding: 20px 0;                   /*  Espaçamento interno */
+  font-size: 0.9em;                  /*  Tamanho menor */
+  color: #6b7280;                    /*  Cinza suave */
+  margin-top: 50px;                  /*  Espaço acima */
 }
