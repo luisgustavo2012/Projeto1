@@ -1,3 +1,10 @@
+.container {
+  max-width: 1200px;   /* largura máxima do conteúdo */
+  margin: 0 auto;       /* centraliza horizontalmente */
+  padding: 20px;        /* espaço interno */
+  box-sizing: border-box; /* inclui padding dentro da largura */
+}
+
 body {
   margin: 0;
   font-family: Arial, sans-serif;
