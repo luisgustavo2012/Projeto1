@@ -6,7 +6,6 @@ body {
 }
 
 
-
 .navbar {
   display: flex;                       /*  Layout horizontal flexível */
   align-items: center;                /*  Alinha itens verticalmente */
